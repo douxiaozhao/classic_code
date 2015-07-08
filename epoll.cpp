@@ -1,11 +1,10 @@
 //   
 // a simple echo server using epoll in linux  
 //   
-// 2009-11-05  
-// 2013-03-22:修改了几个问题，1是/n格式问题，2是去掉了原代码不小心加上的ET模式;
+// 修改了几个问题，1是/n格式问题，2是去掉了原代码不小心加上的ET模式;
 // 本来只是简单的示意程序，决定还是加上 recv/send时的buffer偏移
-// by sparkling  
 //   
+
 #include <sys/socket.h>  
 #include <sys/epoll.h>  
 #include <netinet/in.h>  
